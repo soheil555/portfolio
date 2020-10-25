@@ -70,7 +70,7 @@ nav {
 
 .intro-text,
 .intro-images {
-  flex: 1 1 10rem;
+  flex: 1 1 40rem;
 }
 
 #plant-left {
@@ -116,5 +116,23 @@ nav {
   }
   to {
     transform: translateY(-30%);
+  }
+}
+
+footer {
+  @include flex(center, center, row);
+  min-height: 10vh;
+  background-color: $background-color;
+  color: white;
+
+  padding: 0% 5%;
+
+  h3 {
+    flex: 1 1 40rem;
+  }
+
+  .footer-links {
+    flex: 1 1 40rem;
+    @include flex(space-around, center, row);
   }
 }

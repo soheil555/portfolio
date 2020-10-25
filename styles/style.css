@@ -173,8 +173,8 @@ nav .logo h1 {
 .intro-text,
 .intro-images {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
 }
 
 #plant-left {
@@ -265,6 +265,113 @@ nav .logo h1 {
   to {
     -webkit-transform: translateY(-30%);
             transform: translateY(-30%);
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 10vh;
+  background-color: #154353;
+  color: white;
+  padding: 0% 5%;
+}
+
+footer h3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+footer .footer-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 1260px) {
+  html {
+    font-size: 55%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+  .intro-section {
+    width: 95%;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  html {
+    font-size: 45%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  .intro-text {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .intro-images {
+    text-align: center;
+  }
+  svg {
+    height: 40%;
+    margin-top: 4rem;
+  }
+  nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
+  }
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
